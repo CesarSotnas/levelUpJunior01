@@ -1,0 +1,56 @@
+### Login
+POST http://localhost:3000/auth/login
+Content-Type: application/json
+{
+    "email": "partner1@user.com",
+    "password": "secret"
+}
+
+### Customer
+POST http://localhost:3000/customers
+Content-Type: application/json
+{
+    "name": "partner 1",
+    "email": "partner1@user.com",
+    "password": "secret",
+    "address": "address test 1",
+    "phone": "239837622312"
+}
+
+### Events
+POST http://localhost:3000/events
+Content-Type: application/json
+{
+    "name": "Evento teste 1",
+    "description": "Descricao do evento",
+    "date": "2025-01-01t00:00:00",
+    "location": "Rua x, bairro etc"
+}
+
+### Events
+GET http://localhost:3000/events/10
+Content-Type: application/json
+
+### Partners
+GET http://localhost:3000/partners/events/10000
+Content-Type: application/json
+
+### Partners
+POST http://localhost:3000/partners/events
+Content-Type: application/json
+{
+    "name": "Evento teste 1",
+    "description": "Descricao do evento",
+    "date": "2025-01-01t00:00:00",
+    "location": "Rua partners, bairro etc"
+}
+
+### Partners
+POST http://localhost:3000/partners
+Content-Type: application/json
+{
+    "name": "partner 1",
+    "email": "partner1@user.com",
+    "password": "secret",
+    "company_name": "company name 1"
+}
